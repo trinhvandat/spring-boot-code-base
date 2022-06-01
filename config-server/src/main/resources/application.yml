@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: "[classpath:/, classpath:/config, classpath:/config/{application}, classpath:/config/{application}/{profile}]"
+
+server:
+  port: 8088
