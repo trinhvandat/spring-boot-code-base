@@ -6,6 +6,7 @@ spring:
     hikari:
       maximum-pool-size: 10
       connection-timeout: 3600
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     show-sql: true
   liquibase:

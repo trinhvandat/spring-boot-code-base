@@ -23,6 +23,7 @@
         <module>api</module>
         <module>core</module>
         <module>resource</module>
+        <module>swagger-configuration</module>
     </modules>
 
     <dependencies>

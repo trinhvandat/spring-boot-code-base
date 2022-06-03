@@ -11,7 +11,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: dattv@090399
       MYSQL_DATABASE: codebase
-      MYSQL_USERNAME: dattv
+      MYSQL_USER: dattv
       MYSQL_PASSWORD: dattv@090399
 
 volumes:
