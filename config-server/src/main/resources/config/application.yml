@@ -1,1 +1,12 @@
-s1: hello
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3307/codebase
+    username: dattv
+    password: dattv@090399
+    hikari:
+      maximum-pool-size: 10
+      connection-timeout: 3600
+  jpa:
+    show-sql: true
+  liquibase:
+    change-log: classpath:/migration/master-changelog.xml

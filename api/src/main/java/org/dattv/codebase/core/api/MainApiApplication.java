@@ -1,4 +1,4 @@
-package org.dattv.codebase.api;
+package org.dattv.codebase.core.api;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -13,9 +13,6 @@ import java.time.format.DateTimeFormatter;
 @SpringBootApplication
 public class MainApiApplication implements CommandLineRunner {
 
-  @Value("${s1}")
-  private String s1;
-
   public static void main(String[] args) {
     SpringApplication.run(MainApiApplication.class, args);
   }
@@ -27,6 +24,5 @@ public class MainApiApplication implements CommandLineRunner {
         LocalDateTime.now().format(DateTimeFormatter.ofPattern("hh:mm:ss dd-MM-yyy")));
     log.info("(author)name: {}", "Leonard Trinh");
     log.info("(Organization)name: {}", "All in blessing");
-    log.info("(testConfig)s1: {}", s1);
   }
 }

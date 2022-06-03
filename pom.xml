@@ -20,8 +20,9 @@
     </properties>
 
     <modules>
-        <module>resource</module>
         <module>api</module>
+        <module>core</module>
+        <module>resource</module>
     </modules>
 
     <dependencies>
@@ -53,6 +54,16 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.liquibase</groupId>
+            <artifactId>liquibase-core</artifactId>
+            <version>4.11.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.modelmapper</groupId>
+            <artifactId>modelmapper</artifactId>
+            <version>3.0.0</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
@@ -68,6 +79,11 @@
             <dependency>
                 <groupId>org.dattv.codebase</groupId>
                 <artifactId>resource</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.dattv.codebase</groupId>
+                <artifactId>core</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
         </dependencies>

@@ -1,0 +1,18 @@
+version: "3.3"
+
+services:
+  mysql-db:
+    container_name: mysql_db
+    image: mysql
+    ports:
+      - 3307:3306
+    volumes:
+      - mysql_data:/usr/mysql/data
+    environment:
+      MYSQL_ROOT_PASSWORD: dattv@090399
+      MYSQL_DATABASE: codebase
+      MYSQL_USERNAME: dattv
+      MYSQL_PASSWORD: dattv@090399
+
+volumes:
+  mysql_data: {}

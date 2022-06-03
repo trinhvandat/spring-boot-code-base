@@ -1,4 +1,4 @@
-package org.dattv.codebase.config_server;
+package org.dattv.codebase.core.config_server;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

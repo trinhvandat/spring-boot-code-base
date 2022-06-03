@@ -1,4 +1,4 @@
-package org.dattv.codebase.config_server;
+package org.dattv.codebase.core.config_server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
